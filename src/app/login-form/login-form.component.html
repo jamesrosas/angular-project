@@ -1,0 +1,21 @@
+<div>
+    <h2 *ngIf="buenClima">
+        Hace un dia soleado :)
+    </h2>
+    <h2 *ngIf="!buenClima">
+        Hace un dia lluvioso :(
+    </h2>
+    <div *ngIf="buenClima">
+        <p>{{actividad}}</p>
+        <p>podemos hacer los siguientes ejercicios:</p>
+        <ul>
+            <li *ngFor="let ejercicio of ejercicios">
+                {{ejercicio}}
+            </li>
+        </ul>
+    </div>
+    <div *ngIf="!buenClima">
+        <p>no hace buen clima para salir a hacer ejercicio</p>
+    </div>
+    <button (click)="cambiarClima()">cambiar clima</button>
+</div>
