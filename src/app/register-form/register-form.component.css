@@ -1,15 +1,5 @@
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-h1, h3, p{
+h1 {
     text-align: center;
-}
-
-p {
-    font-size: 18px;
 }
 
 form {
@@ -18,7 +8,7 @@ form {
     border: 2px solid orange;
     border-radius: 10px;
     margin: 0 auto;
-    width: 35%;
+    width: 40%;
     gap: 2rem;
     justify-content: center;
     align-items: center;

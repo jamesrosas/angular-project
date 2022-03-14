@@ -1,0 +1,13 @@
+<main>
+    <h1>Create a account</h1>
+
+    <form (submit)="handleSubmitRegister()">
+        <input  [(ngModel)]="user.email" type="email" name="email" placeholder="Your Email"/>
+        <input  [(ngModel)]="user.fullName" type="text" name="fullName" placeholder="Your full name"/>
+        <input [(ngModel)]="user.password" type="password" name="password" placeholder="Your Password"/>
+        <button type="submit">Register</button>
+    </form>
+
+    <!-- lo que puedo hacer para depues hacer get de las personas que se registran es que los mimos valores que capturo de los imput para crear cuenta, tambien los use al tiempo para insertarlos dentro de un documento que se suba a firebase-->
+
+</main>

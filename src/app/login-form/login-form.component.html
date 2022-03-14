@@ -1,21 +1,14 @@
-<div>
-    <h2 *ngIf="buenClima">
-        Hace un dia soleado :)
-    </h2>
-    <h2 *ngIf="!buenClima">
-        Hace un dia lluvioso :(
-    </h2>
-    <div *ngIf="buenClima">
-        <p>{{actividad}}</p>
-        <p>podemos hacer los siguientes ejercicios:</p>
-        <ul>
-            <li *ngFor="let ejercicio of ejercicios">
-                {{ejercicio}}
-            </li>
-        </ul>
+<main>
+    <div>
+        <h1>Login your account</h1>
+
+        <form (submit)="handleSubmit()">
+            <input  name="email" placeholder="Your Email" [(ngModel)]="admin.email"/>
+            <input [(ngModel)]="admin.password" type="password" name="password" placeholder="Your Password"/>
+            <button type="submit">Login</button>
+        </form>
+
+        <p>Aún no tienes cuenta? registrate <a href="/register">aqui</a></p>
+        
     </div>
-    <div *ngIf="!buenClima">
-        <p>no hace buen clima para salir a hacer ejercicio</p>
-    </div>
-    <button (click)="cambiarClima()">cambiar clima</button>
-</div>
+</main>

@@ -1,0 +1,15 @@
+<p>aqui aparecera la data de los users</p>
+<button (click)="handleLogOut()">LogOut</button>
+
+<div class="list-container">
+    <div class="items-table">
+        <p>Full Name</p>
+        <p>Email</p>
+    </div>
+    <ul *ngFor="let user of userList">
+        <li>
+            <p>{{user.fullName}}</p>
+            <p>{{user.email}}</p>
+        </li>   
+    </ul>
+</div>
