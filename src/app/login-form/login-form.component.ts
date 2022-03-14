@@ -26,29 +26,16 @@ export class LoginFormComponent implements OnInit {
     console.log("haciendo submit")
     console.log(this.admin.email, this.admin.password)
 
-  //   const { email, password } = this.admin
-  //   if (email === environment.adminEmail || environmentProd.adminEmail) {
-  //     this.firebaseauthService.signIn(email, password).then((user) => {
-  //       if (user) {
-  //         this.router.navigate(["/users-data"]).then(() => alert("bienvenido admin"))
-  //       }
-  //     })
-  //   } else {
-  //     alert("tienes que ser administrador para ingresar")
-  //   }
-  // }
-
-  const { email, password } = this.admin
-  if (email === environment.adminEmail ) {
-    this.firebaseauthService.signIn(email, password).then((user) => {
-        if(user) {
+    const { email, password } = this.admin
+    if (email === environment.adminEmail) {
+      this.firebaseauthService.signIn(email, password).then((user) => {
+        if (user) {
           this.router.navigate(["/users-data"]).then(() => {
             alert("welcome admin")
-          })
+          }).catch((err) => console.log("ha ocurrido un error:", err))
         }
-    })
+      })
     }
-}
-
+  }
 
 }

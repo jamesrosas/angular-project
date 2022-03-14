@@ -51,3 +51,57 @@ form button:hover {
     background-color: white;
     color: orange;
 }
+
+nav {
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid orange;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 166, 0, 0.514);
+}
+nav span {
+    margin-left: 2rem;
+    color: orange;
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px solid orange;
+    border-radius: 10px;
+    padding:.5rem;
+    width: fit-content;
+    background-color: white;
+}
+span a {
+    text-decoration: none;
+    color: orange;
+}
+ nav ul {
+     display: flex;
+     width: 40%;
+     gap: 2rem;
+     /* border: 1px solid red; */
+     justify-content: flex-end;
+     padding: 5px 15px;
+     color: white;
+ }
+ nav ul li {
+     list-style: none;
+     background: black;
+     padding: 5px 10px;
+     border-radius: 5px;
+ }
+ nav ul li:hover {
+     filter: invert(1);
+ }
+
+ nav ul li a {
+     list-style: none;
+     color: white;
+     font-size: 18px;
+     text-decoration: none;
+     font-weight: 600;
+ }
+
+

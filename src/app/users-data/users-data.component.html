@@ -1,15 +1,25 @@
-<p>aqui aparecera la data de los users</p>
-<button (click)="handleLogOut()">LogOut</button>
-
+<nav>
+    <span>
+        <a href="/">
+            Hodylunch
+        </a>
+    </span>
+    <ul>
+        <li>
+            <p (click)="handleLogOut()">LogOut</p>
+        </li>
+    </ul>
+</nav>
+<h1>Registered users in Hodylunch</h1>
 <div class="list-container">
     <div class="items-table">
         <p>Full Name</p>
         <p>Email</p>
     </div>
-    <ul *ngFor="let user of userList">
-        <li>
-            <p>{{user.fullName}}</p>
-            <p>{{user.email}}</p>
-        </li>   
+    <ul>
+        <li *ngFor="let user of userList">
+                <p>{{user.fullName}}</p>
+                <p>{{user.email}}</p>  
+        </li>
     </ul>
 </div>

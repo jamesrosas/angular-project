@@ -1,6 +1,26 @@
 <main>
+    <nav>
+        <span>
+            <a href="/">
+                Hodylunch
+            </a>
+        </span>
+        <ul>
+            <li>
+                <a href="/login">
+                    Login
+                </a>
+            </li>
+            <li>
+                <a href="/register">
+                    Registrarse
+                </a>
+            </li>
+        </ul>
+    </nav>
     <div>
         <h1>Login your account</h1>
+        <p>Are you admin? Login here</p>
 
         <form (submit)="handleSubmit()">
             <input  name="email" placeholder="Your Email" [(ngModel)]="admin.email"/>

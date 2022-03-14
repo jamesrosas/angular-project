@@ -1,1 +1,42 @@
-<p>Esta es mi pagina home, donde se vera el un timeline de ordenes de clientes</p>
+<style>
+    h1 {
+        color: orange;
+        text-align: center;
+        font-size: 50px;
+        border: 1px solid orange;
+        border-radius: 10px;
+        padding: 1rem;
+        width: fit-content;
+        margin: 2rem auto;
+    }
+</style>
+
+
+<nav>
+    <span>
+        <a href="/">
+            Hodylunch
+        </a>
+    </span>
+    <ul>
+        <li>
+            <a href="/login">
+                Login
+            </a>
+        </li>
+        <li>
+            <a href="/register">
+                Registrarse
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<h1>Welcome to hodylunch</h1>
+
+
+<article>
+    <p>En Hodylunch encontraras toda la comida que más te gusta. Y lo mejor? a los mejores precios! </p>
+    <p>Registrate en nuestra web y recibe grandes descuentos! - <a href="/register">Registrate aquí</a></p>
+</article>
+<router-outlet></router-outlet>
