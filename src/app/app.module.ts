@@ -19,6 +19,7 @@ const firebaseConfig = {
   messagingSenderId: "952670039046",
   appId: "1:952670039046:web:89e3da9e0d6b63d21ce787"
 };
+// no hay problema en que estas credenciales esten visibles , ya que desde la consola de firebase se establecen los dominios que pueden hacer uso de ellas. entre ellos el localHost por su puesto.
 
 @NgModule({
   declarations: [

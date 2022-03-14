@@ -1,10 +1,8 @@
 import { Injectable } from '@angular/core';
 import { AngularFireAuth} from '@angular/fire/compat/auth'
 import { AngularFirestore } from '@angular/fire/compat/firestore';
-import { AngularFirestoreCollection } from '@angular/fire/compat/firestore';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
-import {map} from 'rxjs/operators'
 
 @Injectable({
   providedIn: 'root'
@@ -21,7 +19,7 @@ export class FirebaseauthService {
 
   getUsersList(): Observable<any> {
     return this.Firestore.collection('usersregister', ref => ref.orderBy('fullName', 'asc')).snapshotChanges()
-            // se trae coleccion de documentos orendados por oreden alfabetico de la A - Z
+            // se trae coleccion de documentos ordenados alfabeticamente de la A - Z
   }
 
   async signIn(email:string, password:string){
@@ -49,7 +47,4 @@ export class FirebaseauthService {
     this.router.navigate(["/"])
   }
 
-  addUserData(){
-    
-  }
 }
